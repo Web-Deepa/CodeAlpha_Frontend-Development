@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+   
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 >Simple Calculator</h2>
+<div class="calculator">
+    <div class="display-area">
+        
+    <input type="text" id="display" readonly>
+    
+    </div>
+    <div class="buttons">
+<!--row1    -->
+                    <button class="clr" onclick="clr()">C</button>
+                    <button  class="clr" onclick="deleteLast()">DEL</button>
+                    <button class="op" onclick="app('%')">%</button>
+                        <button class="op" onclick="app('/')">/</button>
+                       
+
+       
+
+            <!-- Row 2 -->
+             <button class="op"  onclick="app ('*')">*</button>
+            <button class="num" onclick="app('7')">7</button>
+            <button class="num" onclick="app('8')">8</button>
+            <button class="num" onclick="app('9')">9</button>
+            
+
+
+            <!-- Row 3 -->
+            <button class="num" onclick="app('4')">4</button>
+            <button class="num" onclick="app('5')">5</button>
+            <button class="num" onclick="app('6')">6</button>
+            <button class="op"  onclick="app('-')">−</button>
+
+            <!-- Row 4 -->
+            <button class="num" onclick="app('1')">1</button>
+            <button class="num" onclick="app('2')">2</button>
+            <button class="num" onclick="app('3')">3</button>
+            <button class="op"  onclick="app('+')">+</button>
+
+            <!-- Row 5 -->
+            <button class="op" onclick="app('+/-')">+/-</button>
+            <button class="num" onclick="app('0')">0</button>
+            <button class="num" onclick="app('.')">.</button>
+            <button class="eq"  onclick="calc()">=</button>
+        </div>
+        
+
+    </div>
+
+    <script src="cal-control.js"></script>
+</body>
+</html>
