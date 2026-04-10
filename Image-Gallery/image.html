@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Image Gallery</h2>
+
+    <div class="category-bar">
+        <a href="#" class="category-link active" data-filter="all">All</a>
+        <a href="#" class="category-link" data-filter="result">Result</a>
+        <a href="#" class="category-link" data-filter="events">Events</a>
+        <a href="#" class="category-link" data-filter="workshops">Workshops</a>
+        <a href="#" class="category-link" data-filter="cfc">CFC</a>
+        <a href="#" class="category-link" data-filter="school">School</a>
+    </div>
+
+    <div class="gallery-grid">
+        <div class="gallery-item" data-category="workshops">
+            <img src="/images/figmame.jpeg" alt="Figma Me" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="result">
+            <img src="/images/sem3.jpg" alt="Sem 3" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="events">
+            <img src="/images/jecis.jpeg" alt="JECIS" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="workshops">
+            <img src="/images/figma.jpeg" alt="Figma" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="workshops">
+            <img src="/images/figmagroup2.jpeg" alt="Figma Group" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="events">
+            <img src="/images/farewell me.jpeg" alt="Farewell" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="school">
+            <img src="/images/king.jpg" alt="King" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="school">
+            <img src="/images/me butwal.jpg" alt="Butwal" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="events">
+            <img src="/images/ravi.jpeg" alt="Ravi" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="cfc">
+            <img src="/images/cfc3.jpg" alt="CFC" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="events">
+            <img src="/images/windows.jpg" alt="Windows" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="events">
+            <img src="/images/hallme.jpg" alt="Hall" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="result">
+            <img src="/images/1stsemresult.jpg" alt="1st Sem Result" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="events">
+            <img src="/images/vai.jpg" alt="Vai" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="events">
+            <img src="/images/anchorme.jpg" alt="Anchor Me" class="gallery-image">
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lb-close" id="close">&times;</button>
+        <button class="lb-prev" id="prev">&#10094;</button>
+        <img class="lb-img" id="lb-img" src="" alt="">
+        <button class="lb-next" id="next">&#10095;</button>
+        <div class="lb-counter" id="counter"></div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
