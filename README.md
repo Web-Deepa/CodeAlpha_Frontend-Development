@@ -7,6 +7,3 @@ I have made 3 small projects:
 
 2.Image Gallery
  It shows the images accordinng to category.
-
-3.Music Player
-  It plays music with control of volume and durtation .PLay,pause,prev,next are added.
